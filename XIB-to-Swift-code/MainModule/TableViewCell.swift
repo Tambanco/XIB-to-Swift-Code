@@ -8,6 +8,9 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
+    
+    // reuseId
+    static let reuseId = "TableViewCell"
 
     // MARK: - @IBOutlet
     @IBOutlet weak var foodImageView: UIImageView!
