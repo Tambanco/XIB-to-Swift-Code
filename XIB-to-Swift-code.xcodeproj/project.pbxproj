@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49108A8727AB243500AE56DE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49108A8627AB243500AE56DE /* CustomCell.swift */; };
 		49633AD227AAFFD300C46ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49633AD127AAFFD300C46ED0 /* AppDelegate.swift */; };
 		49633AD427AAFFD300C46ED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49633AD327AAFFD300C46ED0 /* SceneDelegate.swift */; };
 		49633AD627AAFFD300C46ED0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49633AD527AAFFD300C46ED0 /* MainViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49108A8627AB243500AE56DE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		49633ACE27AAFFD300C46ED0 /* XIB-to-Swift-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XIB-to-Swift-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49633AD127AAFFD300C46ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49633AD327AAFFD300C46ED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				49633AEA27AB157100C46ED0 /* FoodModel.swift */,
 				49633AD527AAFFD300C46ED0 /* MainViewController.swift */,
 				49633AE627AB012700C46ED0 /* TableViewCell.swift */,
+				49108A8627AB243500AE56DE /* CustomCell.swift */,
 				49633AE727AB012700C46ED0 /* TableViewCell.xib */,
 			);
 			path = MainModule;
@@ -160,6 +163,7 @@
 				49633AD627AAFFD300C46ED0 /* MainViewController.swift in Sources */,
 				49633AE827AB012700C46ED0 /* TableViewCell.swift in Sources */,
 				49633AD227AAFFD300C46ED0 /* AppDelegate.swift in Sources */,
+				49108A8727AB243500AE56DE /* CustomCell.swift in Sources */,
 				49633AD427AAFFD300C46ED0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
