@@ -8,6 +8,6 @@
 import Foundation
 
 struct FoodModel {
-    let title: String
-    let imageName: String
+    let foods = ["Pizza", "WOK", "Sushi", "Roll"]
+    let images = ["pizza.jpeg", "wok.jpeg", "sushi.jpeg", "roll.jpg"]
 }
