@@ -35,6 +35,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addToCartButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vyk-jv-aAd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fks-nq-7ku">
                                 <rect key="frame" x="152" y="0.0" width="98" height="31"/>
@@ -45,6 +48,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addToFavorites:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ynj-Mh-gHm"/>
+                                </connections>
                             </button>
                         </subviews>
                     </stackView>
@@ -68,6 +74,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageView" destination="Oqw-Ia-fWo" id="TlF-gk-Jij"/>
+                <outlet property="titleLabel" destination="Mc9-4y-x0H" id="uPn-M9-Hns"/>
+            </connections>
             <point key="canvasLocation" x="90.579710144927546" y="106.80803571428571"/>
         </tableViewCell>
     </objects>

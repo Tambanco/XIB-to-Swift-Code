@@ -9,15 +9,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    // MARK: - @IBOutlet
+    @IBOutlet weak var foodImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    // MARK: - @IBAction
+    @IBAction func addToCartButton(_ sender: UIButton) {
     }
-    
+    @IBAction func addToFavorites(_ sender: UIButton) {
+    }
 }
