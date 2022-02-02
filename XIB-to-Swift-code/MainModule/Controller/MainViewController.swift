@@ -9,9 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-//    @IBOutlet weak var tableView: UITableView!
     var tableView: UITableView!
-    
     var foodModel: FoodModel!
     
     override func viewDidLoad() {
@@ -23,10 +21,6 @@ class MainViewController: UIViewController {
     func initializeTableView() {
         
         tableView = UITableView()
-//        tableView.backgroundColor = .red
-        
-//        let nib = UINib(nibName: TableViewCell.reuseId, bundle: nil)
-//        tableView.register(nib, forCellReuseIdentifier: TableViewCell.reuseId)
         tableView.register(CustomCell.self, forCellReuseIdentifier: CustomCell.reuseId)
         tableView.dataSource = self
         tableView.dataSource = self
@@ -49,7 +43,6 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseId, for: indexPath) as! TableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.reuseId, for: indexPath) as! CustomCell
         cell.titleLabel.text = foodModel.foods[indexPath.row]
         cell.foodImageView.image = UIImage(named: foodModel.images[indexPath.row])

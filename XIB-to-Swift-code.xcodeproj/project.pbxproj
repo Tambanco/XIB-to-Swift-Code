@@ -14,8 +14,6 @@
 		49633AD927AAFFD300C46ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49633AD727AAFFD300C46ED0 /* Main.storyboard */; };
 		49633ADB27AAFFD500C46ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49633ADA27AAFFD500C46ED0 /* Assets.xcassets */; };
 		49633ADE27AAFFD500C46ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49633ADC27AAFFD500C46ED0 /* LaunchScreen.storyboard */; };
-		49633AE827AB012700C46ED0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49633AE627AB012700C46ED0 /* TableViewCell.swift */; };
-		49633AE927AB012700C46ED0 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49633AE727AB012700C46ED0 /* TableViewCell.xib */; };
 		49633AEB27AB157100C46ED0 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49633AEA27AB157100C46ED0 /* FoodModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +27,6 @@
 		49633ADA27AAFFD500C46ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49633ADD27AAFFD500C46ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49633ADF27AAFFD500C46ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49633AE627AB012700C46ED0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		49633AE727AB012700C46ED0 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		49633AEA27AB157100C46ED0 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49108A8827AB2C8C00AE56DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49633AEA27AB157100C46ED0 /* FoodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49108A8927AB2CA600AE56DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49633AD527AAFFD300C46ED0 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49108A8A27AB2CAF00AE56DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49108A8627AB243500AE56DE /* CustomCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		49633AC527AAFFD300C46ED0 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +98,9 @@
 		49633AE527AB00AE00C46ED0 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				49633AEA27AB157100C46ED0 /* FoodModel.swift */,
-				49633AD527AAFFD300C46ED0 /* MainViewController.swift */,
-				49108A8627AB243500AE56DE /* CustomCell.swift */,
-				49633AE627AB012700C46ED0 /* TableViewCell.swift */,
-				49633AE727AB012700C46ED0 /* TableViewCell.xib */,
+				49108A8827AB2C8C00AE56DE /* Model */,
+				49108A8927AB2CA600AE56DE /* Controller */,
+				49108A8A27AB2CAF00AE56DE /* View */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -146,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				49633ADE27AAFFD500C46ED0 /* LaunchScreen.storyboard in Resources */,
-				49633AE927AB012700C46ED0 /* TableViewCell.xib in Resources */,
 				49633ADB27AAFFD500C46ED0 /* Assets.xcassets in Resources */,
 				49633AD927AAFFD300C46ED0 /* Main.storyboard in Resources */,
 			);
@@ -161,7 +178,6 @@
 			files = (
 				49633AEB27AB157100C46ED0 /* FoodModel.swift in Sources */,
 				49633AD627AAFFD300C46ED0 /* MainViewController.swift in Sources */,
-				49633AE827AB012700C46ED0 /* TableViewCell.swift in Sources */,
 				49633AD227AAFFD300C46ED0 /* AppDelegate.swift in Sources */,
 				49108A8727AB243500AE56DE /* CustomCell.swift in Sources */,
 				49633AD427AAFFD300C46ED0 /* SceneDelegate.swift in Sources */,
