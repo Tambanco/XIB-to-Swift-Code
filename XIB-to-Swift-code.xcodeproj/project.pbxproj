@@ -80,8 +80,8 @@
 			children = (
 				49633AEA27AB157100C46ED0 /* FoodModel.swift */,
 				49633AD527AAFFD300C46ED0 /* MainViewController.swift */,
-				49633AE627AB012700C46ED0 /* TableViewCell.swift */,
 				49108A8627AB243500AE56DE /* CustomCell.swift */,
+				49633AE627AB012700C46ED0 /* TableViewCell.swift */,
 				49633AE727AB012700C46ED0 /* TableViewCell.xib */,
 			);
 			path = MainModule;

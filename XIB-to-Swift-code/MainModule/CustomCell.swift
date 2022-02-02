@@ -20,18 +20,23 @@ class CustomCell: UITableViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont(name: "System", size: 27)
         return label
     }()
     
     let addToCartButton: UIButton = {
         let button = UIButton()
-        button.imageView?.image = UIImage(systemName: "cart.fill")
+        let image = UIImage(systemName: "cart.fill")
+        button.setImage(image, for: .normal)
+        button.backgroundColor = .red
         return button
     }()
     
     let addToFavorites: UIButton = {
         let button = UIButton()
-        button.imageView?.image = UIImage(systemName: "star.fill")
+        let image = UIImage(systemName: "star.fill")
+        button.setImage(image, for: .normal)
+        button.backgroundColor = .red
         return button
     }()
     

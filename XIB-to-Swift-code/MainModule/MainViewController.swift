@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     func initializeTableView() {
         
         tableView = UITableView()
+//        tableView.backgroundColor = .red
         
 //        let nib = UINib(nibName: TableViewCell.reuseId, bundle: nil)
 //        tableView.register(nib, forCellReuseIdentifier: TableViewCell.reuseId)
@@ -31,6 +32,14 @@ class MainViewController: UIViewController {
         tableView.dataSource = self
     
         tableView.rowHeight = 120
+        
+        view.addSubview(tableView)
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        tableView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 1).isActive = true
+        tableView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1).isActive = true
     }
 }
 
