@@ -25,14 +25,18 @@ class CustomCell: UITableViewCell {
     }()
     
     let addToCartButton: UIButton = {
-        let button = UIButton(configuration: .filled(), primaryAction: nil)
-        button.setImage(UIImage(systemName: "cart.fill"), for: .normal)
+        var configuration = UIButton.Configuration.filled()
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 30, bottom: 5, trailing: 30)
+        configuration.image = UIImage(systemName: "cart.fill")
+        let button = UIButton(configuration: configuration, primaryAction: nil)
         return button
     }()
     
     let addToFavorites: UIButton = {
-        let button = UIButton(configuration: .filled(), primaryAction: nil)
-        button.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        var configuration = UIButton.Configuration.filled()
+        configuration.image = UIImage(systemName: "star.fill")
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 30, bottom: 5, trailing: 30)
+        let button = UIButton(configuration: configuration, primaryAction: nil)
         return button
     }()
     
