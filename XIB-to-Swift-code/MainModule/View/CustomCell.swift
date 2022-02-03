@@ -26,9 +26,9 @@ class CustomCell: UITableViewCell {
     
     let addToCartButton: UIButton = {
         let button = UIButton()
-        let image = UIImage(systemName: "cart.fill")
-        button.setImage(image, for: .normal)
-        button.backgroundColor = .red
+        var configuration = UIButton.Configuration.filled()
+        configuration.image = UIImage(systemName: "cart.fill")
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
         return button
     }()
     
