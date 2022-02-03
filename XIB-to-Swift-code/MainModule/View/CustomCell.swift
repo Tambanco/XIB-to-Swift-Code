@@ -14,7 +14,8 @@ class CustomCell: UITableViewCell {
     static let reuseId = "CustomCell"
     
     let foodImageView: UIImageView = {
-        let image = UIImageView()
+        let image = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        image.contentMode = .scaleAspectFit
         return image
     }()
     
@@ -60,14 +61,12 @@ class CustomCell: UITableViewCell {
         titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
         
         addToCartButton.translatesAutoresizingMaskIntoConstraints = false
-        addToCartButton.leadingAnchor.constraint(equalTo: foodImageView.trailingAnchor, constant: 20).isActive = true
+        addToCartButton.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor).isActive = true
         addToCartButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
         
         addToFavorites.translatesAutoresizingMaskIntoConstraints = false
-//        addToFavorites.leadingAnchor.constraint(equalTo: addToCartButton.trailingAnchor, constant: 20).isActive = true
         addToFavorites.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
         addToFavorites.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
-        
     }
     
     required init?(coder: NSCoder) {

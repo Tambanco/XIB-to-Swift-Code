@@ -14,12 +14,11 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initializeTableView()
         foodModel = FoodModel()
+        initializeTableView()
     }
 
     func initializeTableView() {
-        
         tableView = UITableView()
         tableView.register(CustomCell.self, forCellReuseIdentifier: CustomCell.reuseId)
         tableView.dataSource = self
@@ -37,6 +36,7 @@ class MainViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource, UITableViewDelegate
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foodModel.foods.count
