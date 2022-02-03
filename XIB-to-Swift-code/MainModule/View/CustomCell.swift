@@ -27,7 +27,6 @@ class CustomCell: UITableViewCell {
     let addToCartButton: UIButton = {
         let button = UIButton(configuration: .filled(), primaryAction: nil)
         button.setImage(UIImage(systemName: "cart.fill"), for: .normal)
-       
         return button
     }()
     
@@ -49,7 +48,7 @@ class CustomCell: UITableViewCell {
         foodImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         foodImageView.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
         foodImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.7).isActive = true
-        foodImageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.4).isActive = true
+        foodImageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.3).isActive = true
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leadingAnchor.constraint(equalTo: foodImageView.trailingAnchor).isActive = true
@@ -61,7 +60,8 @@ class CustomCell: UITableViewCell {
         addToCartButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
         
         addToFavorites.translatesAutoresizingMaskIntoConstraints = false
-        addToFavorites.leadingAnchor.constraint(equalTo: addToCartButton.trailingAnchor, constant: 20).isActive = true
+//        addToFavorites.leadingAnchor.constraint(equalTo: addToCartButton.trailingAnchor, constant: 20).isActive = true
+        addToFavorites.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
         addToFavorites.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
         
     }
