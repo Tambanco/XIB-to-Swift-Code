@@ -20,7 +20,7 @@ class CustomCell: UITableViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: label.font.fontName, size: 27)
+        label.font = UIFont.systemFont(ofSize: 27)
         return label
     }()
     
