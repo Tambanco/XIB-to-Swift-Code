@@ -41,6 +41,7 @@ class CustomCell: UITableViewCell {
         return button
     }()
     
+    //Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: CustomCell.reuseId)
         
